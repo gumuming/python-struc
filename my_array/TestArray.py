@@ -3,6 +3,7 @@
 from sys import *
 from time import time
 from my_array.DynamicArray import DynamicArray
+from my_array.entity import CaesarCipher
 
 
 def dynamic_array(n):
@@ -64,8 +65,20 @@ if __name__ == "__main__":
     letters2 = ''.join(c for c in document if c.isalpha())
     print(letters2)
     """
+
+    """
     A = ['A', 'D', 'C', 'B', 'F', 'E']
     insertion_sort(A)
     print(A)
+    cipher = CaesarCipher(3)
+    message = "THE EAGLE IS IN PLAY; MEET AD JOE'S"
+    coded = cipher.encrypt(message)
+    print("secret: ", coded)
+    answer = cipher.decrypt(coded)
+    print("message: ", answer)
+    """
+
+    data = [ [0] *4 for j in range(5)]
+
 
     pass
