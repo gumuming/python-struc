@@ -1,8 +1,4 @@
 
-'''
-计算 分尺 刻度
-'''
-
 
 def draw_line(tick_length, tick_label=''):
     line = '-'*tick_length
@@ -19,6 +15,9 @@ def draw_interval(center_length):
 
 
 def draw_ruler(num_inches,major_length):
+    """
+    计算 分尺 刻度
+    """
     draw_line(major_length,'0')
     for j in range(1,1+num_inches):
         draw_interval(major_length-1)
